@@ -1,0 +1,318 @@
+body {
+    background-color: transparent;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Explore';
+    src: url('fonts/Explore.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nature Spirit Regular';
+    src: url('fonts/naturespirit/NatureSpiritRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Charger Regular';
+    src: url('fonts/charger/Charger-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ruseline';
+    src: url('fonts/Ruseline-Demo-BF649c5323ecbce.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Salvetica';
+    src: url('fonts/Salvetica-DEMO-BF649c6b9f98569.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gagalion Regular';
+    src: url('fonts/Gagalin-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Buffalo';
+    src: url('fonts/Buffalo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Alegreya sans Extra Bold';
+    src: url('fonts/AlegreyaSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Semi-Bold';
+    src: url('fonts/MontserratAlternates-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Eund Light';
+    src: url('fonts/Eund/Eund-Light-BF6487db2488f89.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Ghost Light';
+    src: url('fonts/ghost/GhostTRIAL-Medium-BF646c1d97831a4.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Biloner';
+    src: url('fonts/biloner-7bd0e.otf') format('opentype');
+}
+
+
+/* font styles */
+.neon {
+    color: #fff;
+    animation: neon 10s linear infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 
+           0 0 2px #fff,
+           0 0 10px #fff,
+           0 0 20px #D5D0D4,
+           0 0 25px #D5D0D4;
+    }
+    to {
+        text-shadow: 
+          0 0 2px #fff,
+          0 0 4px #fff,
+          0 0 6px #D5D0D4,
+          0 0 8px #D5D0D4,
+          0 0 10px #D5D0D4;
+
+    }
+}
+
+.outline {
+    -webkit-text-stroke: 0.2px #808080;
+}
+
+.shadow {
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* widget resizing */
+#widget {
+    /* position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* size */
+    
+}
+
+#background {
+    position: relative;
+    
+} 
+
+
+
+/* text */
+.title {
+    font-family: 'Ruseline', sans-serif;
+    font-size: 4.5em;
+    color: white;
+    /* position */
+    position: absolute;
+    display: grid;
+    top: 0.5em;
+    left: 3.1em;
+    /* size */
+    width: 6.8em;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.verse {
+    font-family: 'Explore', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    /* position */
+    position: absolute;
+    bottom: 12.9em;
+    left: 5.5em;
+    /* size */
+    width: 12em;
+    height: 10em;
+    padding: 1.5%;
+    border-radius: 20px;
+    overflow: overlay;
+    overflow-y: scroll;
+}
+
+.verse::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.verse::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.verse::-webkit-scrollbar-thumb {
+    background-color: #ffffff38;
+    border-radius: 10px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+
+.reference {
+    font-family: 'Gagalion Regular', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    /* position */
+    position: absolute;
+    bottom: 14.8em;
+    left: 8.9em;
+    /* size */
+    width: 11.5em;
+    padding: 0.5%;
+    border-radius: 20px;
+}
+
+.refresh {
+    font-family: 'Alegreya sans Extra Bold', sans-serif;
+    font-size: 3em;
+    color: white;
+    
+    /* position */
+    position: absolute;
+    left: 10.75em;
+    bottom: 6em;
+    /* size */
+    width: 1.3em;
+    height: 1.3em;
+    /* design */
+    border-radius: 50px;
+    background: #434243;
+    /* other */
+    cursor: pointer;
+}
+
+.refresh::before {
+    content: 'R';
+    /* position */
+    position: absolute;
+    bottom: -1.9%;
+    left: -3%;
+    z-index: 0;
+    /* size */
+    width: 1.2em;
+    height: 1.2em;
+    /* design */
+    border-radius: 50px;
+    border: 2px dashed white;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.version {
+    /* position */
+    position: absolute;
+    left: 21.1em;
+    bottom: 25.5em;
+    display: flex;
+    /* size */
+    padding: 0.1em;
+    transform: scale(0.7);
+    /* design */
+    border: none;
+    border-radius: 99px;
+    background-color: #ffffff38;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: #3d3c3db0 0px 5px 15px 0px ;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+#tab {
+    font-family: 'Ghost light', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.801);
+    /* position */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* size*/
+    height: 49px;
+    width: 90px;
+    transform: scale(0.7);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+}
+
+input[type="radio"]:checked + label {
+    color: #ffffff94;
+    animation: neon1 10s linear infinite alternate;
+}
+@keyframes neon1 {
+    from {
+      text-shadow: 
+         0 0 2px #fff,
+         0 0 10px #fff,
+         0 0 20px #D5D0D4,
+         0 0 25px #D5D0D4;
+    }
+    to {
+      text-shadow: 
+         0 0 2px #fff,
+         0 0 4px #fff,
+         0 0 6px #D5D0D4,
+         0 0 8px #D5D0D4,
+         0 0 10px #D5D0D4;
+
+    }
+}
+
+input[id="option1"]:checked ~ .glider {
+    transform: translateX(0);
+}
+
+
+input[id="option2"]:checked ~ .glider {
+    transform: translateX(120%);
+}
+
+input[id="option3"]:checked ~ .glider {
+    transform: translateX(240%);
+}
+
+.glider {
+    position: absolute;
+    bottom: 0.6em;
+    left: 0.5em;
+    z-index: 1;
+    display: flex;
+    height: 35px;
+    width: 75px;
+    border-radius: 99px;
+    background: radial-gradient(circle, rgba(51,131,106,1) 0%, rgba(251,255,254,1) 100%);
+    transition: 0.25s ease out;
+}
+
+
+
+
+
+
+
+

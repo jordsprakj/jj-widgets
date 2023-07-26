@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bible verse if the day</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="glider.js"></script>
+        <script src="verse.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <main>
+            <div id="widget">
+                <div id="background">
+                    <img src="images/homepage 7 (1).png" alt="widget background"> 
+                <div id ="text">
+                    <p class="title shadow">Bible Verse of the Day</p>
+                    <div class="verse-container">
+                        <p class="verse neon niv" style="display: block;">Verse</p>
+                        <p class="verse neon kjv" style="display: none;"></p>
+                        <p class="verse neon ylt" style="display: none;"></p>
+                    </div>
+                    <p class="reference shadow">reference</p>
+                <div id="controls">
+                    <button class="refresh outline"></button>
+                    <form class="version">
+                          <input type="radio" id="option1" name="selector" checked><label id="tab" for="option1">NIV</label>
+                          <input type="radio" id="option2" name="selector"><label id="tab" for="option2">KJV</label>
+                          <input type="radio" id="option3" name="selector"><label id="tab" for="option3">YLT</label>
+                          <span class="glider"></span>
+                    </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
