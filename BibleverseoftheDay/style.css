@@ -222,11 +222,11 @@ body {
     /* position */
     position: absolute;
     left: 21.1em;
-    bottom: 25.5em;
+    bottom: 26em;
     display: flex;
     /* size */
     padding: 0.1em;
-    transform: scale(0.7);
+    transform: scale(0.91);
     /* design */
     border: none;
     border-radius: 99px;
