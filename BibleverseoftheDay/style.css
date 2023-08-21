@@ -104,7 +104,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.5);
+    transform: scale(0.4);
     transform-origin: center; 
     
     
@@ -141,7 +141,7 @@ body {
     /* position */
     position: absolute;
     bottom: 12.9em;
-    left: 5.5em;
+    left: 6em;
     /* size */
     width: 12em;
     height: 10em;
